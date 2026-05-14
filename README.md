@@ -2,34 +2,36 @@
 
 CargoRoute IQ is a comprehensive, web-based logistics platform designed for regional carriers, freight forwarders, and logistics coordinators. It streamlines supply chain operations by centralizing bookings, managing vehicle capacity, optimizing route assignments, and balancing load consolidation across fleets.
 
+---
+
 ## 🚀 Key Features
 
-*   **Fleet Management**: Track vehicle availability, capacity, and maintenance.
-*   **Dynamic Routing**: Optimize routes for efficiency and fuel savings.
-*   **Load Balancing**: Consolidate shipments to maximize vehicle utilization.
-*   **Real-time Bookings**: Centralized management of shipping requests and status updates.
-*   **Advanced Analytics**: Visual KPIs and reports using Recharts.
-*   **Role-Based Access Control**: Secure access for Admins, Dispatchers, Drivers, and Shippers[cite: 1].
+*   **Fleet Management**: Track vehicle availability, capacity, and maintenance logs.
+*   **Dynamic Routing**: Optimize delivery paths for maximum efficiency and fuel savings.
+*   **Load Balancing**: Intelligently consolidate shipments to maximize vehicle utilization.
+*   **Real-time Bookings**: Centralized management of shipping requests with live status updates.
+*   **Advanced Analytics**: Visual KPIs and interactive reports powered by Recharts.
+*   **Role-Based Access Control (RBAC)**: Secure, granular access tailored for Admins, Dispatchers, Drivers, and Shippers[cite: 1].
 
 ---
 
 ## 🛠 Tech Stack
 
 ### Frontend
-*   **Framework**: React 19.2.4[cite: 1]
+*   **Library**: React 19.2.4[cite: 1]
 *   **Routing**: React Router DOM 7.14.0[cite: 1]
-*   **Icons**: Lucide-React, React-Icons[cite: 1]
-*   **Charts**: Recharts 3.8.1[cite: 1]
-*   **API Client**: Axios 1.14.0[cite: 1]
-*   **Security**: JWT Decode 4.0.0[cite: 1]
+*   **UI Components**: Lucide-React & React-Icons[cite: 1]
+*   **Data Visualization**: Recharts 3.8.1[cite: 1]
+*   **HTTP Client**: Axios 1.14.0[cite: 1]
+*   **Authentication**: JWT Decode 4.0.0[cite: 1]
 
 ### Backend (Microservices)
-*   **Language**: Java 17[cite: 1]
+*   **Language**: Java 17 (LTS)[cite: 1]
 *   **Framework**: Spring Boot 4.0.5[cite: 1]
 *   **Architecture**: Spring Cloud 2025.1.1 (Microservices)[cite: 1]
 *   **Service Discovery**: Netflix Eureka[cite: 1]
-*   **Security**: Spring Security & JWT[cite: 1]
-*   **Database**: MySQL with Spring Data JPA[cite: 1]
+*   **Security**: Spring Security with JWT (jjwt)[cite: 1]
+*   **Persistence**: MySQL with Spring Data JPA[cite: 1]
 *   **Build Tool**: Maven[cite: 1]
 
 ---
@@ -38,57 +40,51 @@ CargoRoute IQ is a comprehensive, web-based logistics platform designed for regi
 
 ```text
 cargoRoute-IQ-Project/
-├── CargoRoute-IQ/           # Backend Microservices (Spring Boot)
-│   ├── API-Gateway/         # Central Entry Point & Routing
-│   ├── Eureka-Server/       # Service Registry
-│   ├── Fleet-Service/       # Vehicle & Driver Management
-│   ├── Routing-Service/     # Route Optimization Logic
-│   └── Booking-Service/     # Shipment & Order Management
-└── frontendproject/         # Frontend Application (React)
-    ├── src/api/             # Axios API instances
-    ├── src/components/      # Reusable UI Components
-    ├── src/pages/           # Dashboard & Feature Modules
-    └── src/styles/          # CSS Modules & Global Styles
+├── CargoRoute-IQ/           # Spring Boot Microservices
+│   ├── API-Gateway/         # Unified entry point & routing logic
+│   ├── Eureka-Server/       # Service registry & discovery
+│   ├── Fleet-Service/       # Vehicle & driver resource management
+│   ├── Routing-Service/     # Path optimization & route planning
+│   └── Booking-Service/     # Shipment lifecycle & order management
+└── frontendproject/         # React Frontend Application
+    ├── src/api/             # API services & Axios interceptors
+    ├── src/components/      # Shared UI elements
+    ├── src/pages/           # View modules (Dashboards, Login, etc.)
+    └── src/styles/          # Unified CSS & theme modules
+```
 
-
-    ```
-
-
-###Getting Started
+---
+### Getting Started
 Prerequisites
-Node.js: v18+[cite: 1]
+**Node.js**: v18 or higher[cite: 1]
 
-JDK: 17[cite: 1]
+**JDK**: 17 (LTS)[cite: 1]
 
-Maven: 3.8+[cite: 1]
+**Maven**: 3.8 or higher[cite: 1]
 
-MySQL Server: Running on port 3306[cite: 1]
+**MySQL**: Running on port 3306[cite: 1]
 
-Installation & Setup
-Clone the Repository
-
-Bash
-git clone [https://github.com/SnehaMai18/cargoRoute-IQ-Project.git](https://github.com/SnehaMai18/cargoRoute-IQ-Project.git)
+**Installation & Execution**
+1. Clone the Repository
+#### git clone [https://github.com/SnehaMai18/cargoRoute-IQ-Project.git](https://github.com/SnehaMai18/cargoRoute-IQ-Project.git)
 cd cargoRoute-IQ-Project
-Frontend Setup
 
-Bash
+**Frontend Deployment**
 cd frontendproject
 npm install
 npm start
+*   The application will be accessible at `http://localhost:3000`[cite: 1].
 
-    The UI will be available at `http://localhost:3000`[cite: 1].
-
-3.  **Backend Setup**
-    *   Start the **Eureka Server** first[cite: 1].
-    *   Start the **API Gateway**[cite: 1].
-    *   Start individual microservices (Fleet, Routing, Booking, etc.)[cite: 1].
+3.  **Backend Deployment**
+    *   Initialize the **Eureka Server** module first to enable service discovery[cite: 1].
+    *   Launch the **API Gateway** module[cite: 1].
+    *   Start functional microservices: **Fleet**, **Routing**, and **Booking**[cite: 1].
 
 ---
 
-## 🧪 Testing
+## 🧪 Quality Assurance
 
-The frontend is equipped with Jest and React Testing Library[cite: 1].
+The frontend utilizes a robust testing suite for components and user workflows[cite: 1].
 ```bash
 npm test
 
