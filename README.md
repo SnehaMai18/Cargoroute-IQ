@@ -69,8 +69,8 @@ Prerequisites
 #### git clone [https://github.com/SnehaMai18/cargoRoute-IQ-Project.git](https://github.com/SnehaMai18/cargoRoute-IQ-Project.git)
 cd cargoRoute-IQ-Project
 
-**Frontend Deployment**
-2.cd frontendproject
+**2. Frontend Deployment**
+cd frontendproject
 npm install
 npm start
 *   The application will be accessible at `http://localhost:3000`[cite: 1].
