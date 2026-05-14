@@ -18,21 +18,21 @@ CargoRoute IQ is a comprehensive, web-based logistics platform designed for regi
 ## 🛠 Tech Stack
 
 ### Frontend
-*   **Library**: React 19.2.4[cite: 1]
-*   **Routing**: React Router DOM 7.14.0[cite: 1]
-*   **UI Components**: Lucide-React & React-Icons[cite: 1]
-*   **Data Visualization**: Recharts 3.8.1[cite: 1]
-*   **HTTP Client**: Axios 1.14.0[cite: 1]
-*   **Authentication**: JWT Decode 4.0.0[cite: 1]
+*   **Library**: React 19.2.4
+*   **Routing**: React Router DOM 7.14.0
+*   **UI Components**: Lucide-React & React-Icons
+*   **Data Visualization**: Recharts 3.8.1
+*   **HTTP Client**: Axios 1.14.0
+*   **Authentication**: JWT Decode 4.0.0
 
 ### Backend (Microservices)
-*   **Language**: Java 17 (LTS)[cite: 1]
-*   **Framework**: Spring Boot 4.0.5[cite: 1]
-*   **Architecture**: Spring Cloud 2025.1.1 (Microservices)[cite: 1]
-*   **Service Discovery**: Netflix Eureka[cite: 1]
-*   **Security**: Spring Security with JWT (jjwt)[cite: 1]
-*   **Persistence**: MySQL with Spring Data JPA[cite: 1]
-*   **Build Tool**: Maven[cite: 1]
+*   **Language**: Java 17 (LTS)
+*   **Framework**: Spring Boot 4.0.5
+*   **Architecture**: Spring Cloud 2025.1.1 (Microservices)
+*   **Service Discovery**: Netflix Eureka
+*   **Security**: Spring Security with JWT (jjwt)
+*   **Persistence**: MySQL with Spring Data JPA
+*   **Build Tool**: Maven
 
 ---
 
@@ -56,13 +56,13 @@ cargoRoute-IQ-Project/
 ---
 ## Getting Started
 Prerequisites
-**Node.js**: v18 or higher[cite: 1]
+**Node.js**: v18 or higher
 
-**JDK**: 17 (LTS)[cite: 1]
+**JDK**: 17 (LTS)
 
-**Maven**: 3.8 or higher[cite: 1]
+**Maven**: 3.8 or higher
 
-**MySQL**: Running on port 3306[cite: 1]
+**MySQL**: Running on port 3306
 
 **Installation & Execution**
 1. Clone the Repository
@@ -73,12 +73,12 @@ cd cargoRoute-IQ-Project
 cd frontendproject
 npm install
 npm start
-*   The application will be accessible at `http://localhost:3000`[cite: 1].
+*   The application will be accessible at `http://localhost:3000`.
 
 3.  **Backend Deployment**
-    *   Initialize the **Eureka Server** module first to enable service discovery[cite: 1].
-    *   Launch the **API Gateway** module[cite: 1].
-    *   Start functional microservices: **Fleet**, **Routing**, and **Booking**[cite: 1].
+    *   Initialize the **Eureka Server** module first to enable service discovery
+    *   Launch the **API Gateway** module
+    *   Start functional microservices: **Fleet**, **Routing**, and **Booking**.
 
 ---
 
